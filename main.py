@@ -1,6 +1,6 @@
 import time
 from operator import truediv
-from player import HumanPlayer, RandomComputerPlayer
+from player import HumanPlayer, RandomComputerPlayer, GeniusComputerPlayer
 
 class TicTacToe:
 
@@ -102,7 +102,7 @@ def play(game, x_player, o_player, print_game = True):
 
 if __name__ == '__main__':
     x_player = HumanPlayer('x')
-    o_player = RandomComputerPlayer('o')
+    o_player = GeniusComputerPlayer('o')
     t = TicTacToe()
     play(t, x_player, o_player, print_game = True)
 
